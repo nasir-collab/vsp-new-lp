@@ -193,36 +193,14 @@ section {
     font-weight: 800;
     color: var(--primary-blue);
     letter-spacing: 0.1em;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
 
-.brand-logo-top {
-    background-color: var(--primary-blue);
-    padding: 8px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand-logo-vsp {
-    color: var(--secondary-yellow);
-    font-weight: 900;
-    font-size: 2.2rem;
-    letter-spacing: -0.05em;
-    line-height: 0.9;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.brand-logo-bottom {
-    background-color: var(--secondary-yellow);
-    color: #000000;
-    padding: 4px 6px;
-    text-align: center;
-    font-weight: 800;
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+.brand-logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
 }
 
 .nav ul {
@@ -235,6 +213,10 @@ section {
     font-weight: 600;
     font-size: 0.9rem;
     color: var(--text-dark);
+}
+
+.nav ul li a.btn-secondary {
+    color: var(--white);
 }
 
 .nav ul li a:hover {
