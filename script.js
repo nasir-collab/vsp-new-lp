@@ -1,15 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Header Scroll Effect
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
     // Mobile Menu Toggle
-    const mobileMenu = document.getElementById('mobile-menu');
+    const menuToggle = document.getElementById('mobile-menu');
     const nav = document.querySelector('.nav');
 
-    mobileMenu.addEventListener('click', () => {
+    menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
-        mobileMenu.classList.toggle('open');
+        menuToggle.classList.toggle('active'); // Changed from 'open' to 'active'
 
         // Transform hamburger icon
-        const spans = mobileMenu.querySelectorAll('span');
-        if (mobileMenu.classList.contains('open')) {
+        const spans = menuToggle.querySelectorAll('span'); // Changed from mobileMenu to menuToggle
+        if (menuToggle.classList.contains('active')) { // Changed from 'open' to 'active'
             spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
             spans[1].style.opacity = '0';
             spans[2].style.transform = 'rotate(-45deg) translate(7px, -7px)';
